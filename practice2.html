@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Creative HTML CSS Navigation bar with Transparency</title>
+    <link rel="stylesheet" type="text/css" href="practice2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="year current"><p>Home</p></div>
+        <div class="year"><p>About</p></div>
+        <div class="year"><p>Gallery</p></div>
+        <div class="year"><p>Contact</p></div>
+        <div class="year"><p>Faq</p></div>
+        <div class="slider"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(".year").on('click', function(){
+            $(".year").removeClass("current");
+            $(this).addClass("current");
+        })
+    </script>
+</body>
+</html>

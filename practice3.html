@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforming Hamburger Menu</title>
+    <link rel="stylesheet" type="text/css" href="practice3.css">
+</head>
+<body>
+    <div class="menu">
+        <span class="toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <div class="menucontent">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Testimonial</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $('.toggle').on('click', function() {
+        $('.menu').toggleClass('active');
+        });
+    </script>
+
+</body>
+</html>
