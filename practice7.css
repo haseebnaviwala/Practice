@@ -1,0 +1,52 @@
+body{
+    font-family: tahoma;
+    overflow: hidden;
+    background: #222;
+}
+
+footer{
+    text-align: center;
+}
+
+.social{
+    margin-top: 60px;
+}
+
+footer .social .fa-brands{
+    color: white;
+    border-radius: 50px;
+    margin: 15px 5px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 50px;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+footer .social .fa-brands:hover{
+    background: #ff1053;
+    border: 2px solid #fb527a;
+    border-radius: 150px;
+}
+
+footer p{
+    color: #999;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 60px;
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.logo:hover{
+    text-decoration: none;
+    color: #fb527a;
+}
