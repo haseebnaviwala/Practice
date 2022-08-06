@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollTrigger Parallax Header Effect</title>
+    <link rel="stylesheet" type="text/css" href="ParallaxEffect.css">
+</head>
+<body>
+    <section>
+        <img src="./Images/bg.jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="./Images/man.png" id="man">
+        <img src="./Images/clouds_1.png" id="clouds_1">
+        <img src="./Images/clouds_2.png" id="clouds_2">
+        <img src="./Images/mountain_left.png" id="mountain_left">
+        <img src="./Images/mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>ScrollTrigger is Awesome</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas. Ipsum repellat dicta aliquam assumenda sequi, atque necessitatibus.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, amet ipsam rerum veritatis, accusamus nulla quisquam porro quod libero, aperiam fuga quas.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#bg", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        });
+
+        gsap.to("#man", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        });
+
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        });
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        });
+
+        gsap.to("#clouds_1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 200,
+        });
+
+        gsap.to("#clouds_2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -200,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 500,
+        });
+    </script>
+</body>
+</html>
